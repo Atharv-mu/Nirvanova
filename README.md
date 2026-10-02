@@ -1,4 +1,4 @@
-# 🇮🇳 NIRVANOVA India — Futuristic Tourism Platform
+# 🇮🇳 NIRVANOVA India's Futuristic Tourism Platform
 
 > **Travel smart. Travel safe. Travel India — better.**
 
