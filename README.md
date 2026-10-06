@@ -4,9 +4,9 @@
 
 NIRVANOVA India is a futuristic, single-page tourism platform prototype designed to make traveling across India more convenient, interactive, and safety-focused.
 
-The platform brings together **travel discovery, hotels, vehicle rentals, verified guides, community sharing, media uploads, credits, emergency assistance, maps, and an AI travel assistant** in one interface.
+The platform brings together **travel discovery, hotels, vehicle rentals, verified guides, community sharing, media uploads, credits, emergency assistance, maps, and an AI travel assistant in one interface.
 
-This project was developed as a **web-based prototype / hackathon project** and is currently implemented using a single HTML file with embedded CSS and JavaScript.
+This project was developed as a web-based prototype / hackathon project** and is currently implemented using a single HTML file with embedded CSS and JavaScript.
 
 ---
 
@@ -93,7 +93,7 @@ Users can:
 * View their credits
 * View their bookings
 
-Profile information is stored locally using **browser localStorage**.
+Currently Profile information is stored locally using browser localStorage.
 
 ---
 
@@ -103,7 +103,7 @@ NIRVANOVA includes a simple reward system.
 
 Users can earn:
 
-> **10 credits for every uploaded media file**
+> 10 credits for every uploaded media file
 
 Credits can also be used toward mock bookings.
 
@@ -202,7 +202,7 @@ The current prototype provides predefined contextual responses for destinations 
 * Kerala
 * Goa
 
-> The assistant is currently a **mock AI interface** and is structured so that a real AI API can be integrated later.
+> The assistant is currently a mock AI interface and is structured so that a real AI API can be integrated later.
 
 ---
 
@@ -249,9 +249,9 @@ NIRVANOVA uses a futuristic travel-inspired interface.
 
 ### Browser APIs / Features
 
-* `localStorage`
-* `FileReader`
-* `URL.createObjectURL()`
+* localStorage
+* FileReader
+* URL.createObjectURL()
 * DOM manipulation
 * Responsive CSS
 * Google Maps Embed
@@ -289,17 +289,17 @@ The `index.html` file contains:
 
 No installation or build process is required.
 
-### 1. Clone the repository
+1. Clone the repository
 
 ```bash
 git clone <your-repository-url>
 ```
 
-### 2. Open the project
+2. Open the project
 
 Navigate to the project directory.
 
-### 3. Run the website
+3. Run the website
 
 Open:
 
@@ -315,7 +315,7 @@ That's it! 🚀
 
 ## 💾 Data Storage
 
-The current prototype uses **browser localStorage** instead of a backend database.
+The current prototype uses browser localStorage instead of a backend database.
 
 Stored information includes:
 
@@ -333,7 +333,7 @@ Because the project uses browser storage, the data is local to the user's browse
 
 ## ⚠️ Current Limitations
 
-This is currently a **frontend prototype**, not a production-ready travel booking platform.
+This is currently a frontend prototype, not a production-ready travel booking platform.
 
 Some features are simulated:
 
@@ -425,7 +425,7 @@ The platform could eventually be converted into:
 
 NIRVANOVA aims to create a unified digital travel ecosystem where travelers can:
 
-> **Discover → Plan → Book → Explore → Share → Stay Safe**
+> Discover → Plan → Book → Explore → Share → Stay Safe
 
 The long-term vision is to combine tourism discovery, safety, community interaction, and travel services into a single platform focused on India.
 
@@ -461,25 +461,21 @@ Interested in:
 
 * 💼 [LinkedIn](https://www.linkedin.com/in/atharvholkar/)
 * 🐙 [GitHub](https://github.com/Atharv-mu)
-* 💻 [LeetCode](https://leetcode.com/u/Atharv_78/)
-* 📸 [Instagram](https://www.instagram.com/atharvholkar78/)
 
----
 
 ## 📌 Project Status
 
-**Current Version:** `Prototype v1.0`
+**Current Version:** Prototype v1.0
 
 **Status:** 🚧 In Development
 
 The project is currently a frontend prototype and can be expanded into a full-stack tourism platform in future versions.
 
----
 
 ## ⭐ Support
 
 If you find the project interesting, consider giving the repository a ⭐ on GitHub.
 
-**NIRVANOVA India 🇮🇳**
+NIRVANOVA India 🇮🇳
 
-> **Travel smart. Travel safe. Travel India — better.**
+> Travel smart. Travel safe. Travel India — better.
