@@ -1,481 +1,198 @@
-# NIRVANOVA India's Futuristic Tourism Platform
+# NIRVANOVA | India's Futuristic Tourism Platform
 
-> **Travel smart. Travel safe. Travel India — better.**
+> **Travel smart. Travel safe. Travel India, better.**
 
-NIRVANOVA India is a futuristic, single-page tourism platform prototype designed to make traveling across India more convenient, interactive, and safety-focused.
+<p align="center">
+  <a href="https://nirvanova1.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-Visit_Site-00e5ff?style=for-the-badge&logo=netlify&logoColor=white" alt="Live demo"></a>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</p>
 
-The platform brings together **travel discovery, hotels, vehicle rentals, verified guides, community sharing, media uploads, credits, emergency assistance, maps, and an AI travel assistant in one interface.
+**Live demo:** [nirvanova1.netlify.app](https://nirvanova1.netlify.app/)
 
-This project was developed as a web-based prototype / hackathon project** and is currently implemented using a single HTML file with embedded CSS and JavaScript.
+NIRVANOVA India is a single-page tourism platform prototype that aims to make travel across India more convenient, interactive and safety-focused. It brings destination discovery, hotels, vehicle rentals, verified guides, community sharing, travel credits, emergency assistance, maps and an AI travel assistant into one interface.
 
----
-
-## ✨ Features
-
-### 🗺️ Explore India
-
-Discover different destinations across India through an interactive exploration section.
-
-Currently includes destinations such as:
-
-* Jaipur
-* Agra
-* Kerala
-* Varanasi
-* Goa
-* Manali
-
-Users can:
-
-* Search destinations
-* Save places to their profile
-* View locations on Google Maps
-* Discover attractions and travel experiences
+It began as a hackathon project and is currently built as a single HTML file with embedded CSS and JavaScript.
 
 ---
 
-### 🏨 Hotel Booking
+## Contents
 
-NIRVANOVA provides a mock hotel-booking experience.
-
-Users can:
-
-* Browse available hotels
-* View ratings
-* View prices per night
-* Select check-in and check-out dates
-* Select number of guests
-* Book a hotel
-* View booking details
-* Cancel bookings
-
-Example stays include:
-
-* Heritage Taj View, Agra
-* Royal Pink Palace, Jaipur
-* Kerala Backwater Resort
-
-> **Note:** The current version uses mock booking and payment functionality.
+- [Features](#features)
+- [Design](#design)
+- [Technologies](#technologies)
+- [Project structure](#project-structure)
+- [Running it locally](#running-it-locally)
+- [Data storage](#data-storage)
+- [Current limitations](#current-limitations)
+- [Future improvements](#future-improvements)
+- [Project vision](#project-vision)
+- [About the developer](#about-the-developer)
 
 ---
 
-### 🚗 Vehicle Rentals
+## Features
 
-Users can explore vehicles available for rental.
+### Explore India
 
-Supported examples include:
+An interactive section for discovering destinations across the country. It currently covers Jaipur, Agra, Kerala, Varanasi, Goa and Manali.
 
-* 🚘 Swift Dzire
-* 🏍️ Royal Enfield 350cc
-* 🚐 Innova Crysta
+Users can search destinations, save places to their profile, view locations on Google Maps and browse attractions and travel experiences.
 
-Users can:
+### Hotel booking
 
-* View vehicle types
-* Check daily rental prices
-* Select pickup and return dates
-* Enter pickup locations
-* Create bookings
-* Cancel bookings
+A mock hotel-booking flow. Users can browse hotels, see ratings and prices per night, choose check-in and check-out dates and the number of guests, then book, review and cancel their bookings.
 
----
+Sample stays include Heritage Taj View (Agra), Royal Pink Palace (Jaipur) and Kerala Backwater Resort.
 
-### 👤 User Profile
+> Booking and payment are simulated in the current version.
 
-The platform includes a local user profile system.
+### Vehicle rentals
 
-Users can:
+Users can browse rental vehicles, check daily prices, pick pickup and return dates, enter a pickup location, and create or cancel bookings. The sample fleet includes a Swift Dzire, a Royal Enfield 350cc and an Innova Crysta.
 
-* Set a display name
-* Upload a profile picture
-* Save their profile
-* Load their saved profile
-* View their credits
-* View their bookings
+### User profile
 
-Currently Profile information is stored locally using browser localStorage.
+A local profile system where users can set a display name, upload a profile picture, and save and reload their profile. The profile page also shows their credits and bookings. All of this is stored in the browser using `localStorage`.
 
----
+### Travel credits
 
-### 💰 Travel Credits
+A simple reward system. Users earn **10 credits for every uploaded media file**, and **1 credit is worth ₹10** toward mock bookings.
 
-NIRVANOVA includes a simple reward system.
+The system supports earning credits, spending them on bookings, deducting them after payment and refunding them when an eligible booking is cancelled.
 
-Users can earn:
+### Community
 
-> 10 credits for every uploaded media file
+A space for travellers to share experiences. Users can write text posts, upload images and videos, search and filter posts, like posts, and see each post's author and timestamp. Community data is stored locally in `localStorage`.
 
-Credits can also be used toward mock bookings.
+### Media uploads
 
-Current conversion:
+Users can upload images and videos and preview them directly on the site. Each upload earns credits.
 
-> **1 credit = ₹10**
+### Verified guides
 
-The system supports:
+A sample guide directory showing each guide's name, location, rating, languages and booking option. Guide booking is mock functionality for now.
 
-* Earning credits
-* Using credits for bookings
-* Deducting credits after payment
-* Refunding credits when an eligible booking is cancelled
+### Emergency assistance
+
+Quick-access buttons for **Police**, **Ambulance** and the **Tourist Helpline**, along with an embedded Google Map. Users can search for a destination and open it directly on the map.
+
+### AI travel assistant
+
+A lightweight, mock assistant that answers questions such as "Best time to visit Leh?". It gives predefined, contextual responses for Jaipur, Rajasthan, Leh, Ladakh, Manali, Kerala and Goa.
+
+It's structured so that a real AI API can be plugged in later.
+
+### Dynamic hero background
+
+The homepage changes its background image every few seconds, cycling through India, the Taj Mahal, Hawa Mahal, Alleppey Backwaters, the Varanasi Ghats and Old Goa.
 
 ---
 
-### 🌎 Community
+## Design
 
-The community section allows travelers to share their experiences.
+NIRVANOVA uses a futuristic, travel-inspired interface with:
 
-Users can:
-
-* Create text posts
-* Upload images
-* Upload videos
-* Search posts
-* Filter posts
-* Like posts
-* View author information
-* View timestamps
-
-Community data is stored locally using `localStorage`.
+- A dark theme with cyan neon accents and purple gradients
+- Glassmorphism-style cards and glow effects
+- Animated sections and a floating AI assistant
+- Integrated maps
+- A responsive layout for different screen sizes
 
 ---
 
-### 📸 Media Uploads
+## Technologies
 
-Users can upload:
+**Frontend:** HTML5, CSS3 and JavaScript
 
-* Images
-* Videos
+**Browser features:** `localStorage`, `FileReader`, `URL.createObjectURL()`, DOM manipulation, responsive CSS and Google Maps Embed
 
-Uploaded media can be previewed directly inside the website.
-
-The upload system also rewards users with credits.
+**External resources:** Font Awesome, Wikimedia Commons, Unsplash, RandomUser and Google Maps
 
 ---
 
-### 🧑‍🏫 Verified Guides
+## Project structure
 
-The platform includes a sample verified-guide section.
+The project is intentionally kept as a single-file prototype.
 
-Users can view:
-
-* Guide names
-* Locations
-* Ratings
-* Languages
-* Booking options
-
-The current guide booking buttons are mock functionality.
-
----
-
-### 🚨 Emergency Assistance
-
-NIRVANOVA provides quick-access emergency options:
-
-* 🚔 Police
-* 🚑 Ambulance
-* ☎️ Tourist Helpline
-
-The project also integrates a Google Maps embed for location-based assistance.
-
-Users can search for a destination and open it directly on the map.
-
----
-
-### 🤖 AI Travel Assistant
-
-The project includes a lightweight mock AI travel assistant.
-
-Users can ask questions such as:
-
-```text
-Best time to visit Leh?
 ```
-
-The current prototype provides predefined contextual responses for destinations including:
-
-* Jaipur
-* Rajasthan
-* Leh
-* Ladakh
-* Manali
-* Kerala
-* Goa
-
-> The assistant is currently a mock AI interface and is structured so that a real AI API can be integrated later.
-
----
-
-### 🌄 Dynamic Hero Background
-
-The homepage automatically changes its background image every few seconds.
-
-The rotating destinations include:
-
-* India
-* Taj Mahal
-* Hawa Mahal
-* Alleppey Backwaters
-* Varanasi Ghats
-* Old Goa
-
----
-
-## 🎨 Design
-
-NIRVANOVA uses a futuristic travel-inspired interface.
-
-### Design characteristics
-
-* 🌌 Dark futuristic theme
-* 🔵 Cyan neon accents
-* 🟣 Purple gradients
-* 🪟 Glassmorphism-inspired cards
-* ✨ Glow effects
-* 📱 Responsive layout
-* 🎞️ Animated sections
-* 🗺️ Integrated maps
-* 💬 Floating AI assistant
-
----
-
-## 🛠️ Technologies Used
-
-### Frontend
-
-* HTML5
-* CSS3
-* JavaScript
-
-### Browser APIs / Features
-
-* localStorage
-* FileReader
-* URL.createObjectURL()
-* DOM manipulation
-* Responsive CSS
-* Google Maps Embed
-
-### External Resources
-
-* Font Awesome
-* Wikimedia Commons
-* Unsplash
-* RandomUser
-* Google Maps
-
----
-
-## 📂 Project Structure
-
-The current version is intentionally maintained as a **single-file prototype**.
-
-```text
-📦 NIRVANOVA-India
-└── 📄 index.html
-```
-
-The `index.html` file contains:
-
-```text
-├── HTML structure
-├── CSS styling
-└── JavaScript functionality
+NIRVANOVA-India/
+└── index.html      # HTML structure, CSS styling and JavaScript logic
 ```
 
 ---
 
-## ▶️ How to Run
+## Running it locally
 
-No installation or build process is required.
+No installation or build step is needed.
 
-1. Clone the repository
-
-```bash
-git clone <your-repository-url>
-```
-
-2. Open the project
-
-Navigate to the project directory.
-
-3. Run the website
-
-Open:
-
-```text
-index.html
-```
-
-in any modern web browser.
-
-That's it! 🚀
+1. Clone the repository:
+   ```bash
+   git clone <your-repository-url>
+   ```
+2. Open the project folder.
+3. Open `index.html` in any modern web browser.
 
 ---
 
-## 💾 Data Storage
+## Data storage
 
-The current prototype uses browser localStorage instead of a backend database.
+The prototype uses browser `localStorage` instead of a database. It stores the user profile, credits, saved places, bookings, upload information, community posts and likes.
 
-Stored information includes:
-
-* User profile
-* Credits
-* Saved places
-* Bookings
-* Upload information
-* Community posts
-* Likes
-
-Because the project uses browser storage, the data is local to the user's browser.
+Because of this, data stays in the browser it was created in and isn't shared between users or devices.
 
 ---
 
-## ⚠️ Current Limitations
+## Current limitations
 
-This is currently a frontend prototype, not a production-ready travel booking platform.
+NIRVANOVA is a frontend prototype, not a production-ready booking platform.
 
-Some features are simulated:
+**Simulated features:** hotel booking, vehicle booking, payments, guide booking, the AI assistant, credits and user authentication.
 
-* Hotel booking
-* Vehicle booking
-* Payments
-* Guide booking
-* AI assistant
-* Credits
-* User authentication
-
-There is currently no:
-
-* Backend server
-* Database
-* Real authentication
-* Real payment gateway
-* Real hotel booking API
-* Real vehicle rental API
-* Real AI API
-* Cloud media storage
+**Not yet available:** a backend server, a database, real authentication, a payment gateway, hotel and vehicle rental APIs, a real AI API and cloud media storage.
 
 ---
 
-## 🔮 Future Improvements
+## Future improvements
 
-The next versions can introduce:
-
-### 🔐 Authentication
-
-* User registration
-* Login
-* OAuth
-* Secure user accounts
-
-### 🗄️ Backend
-
-* Node.js / Express
-* REST APIs
-* Database integration
-* User management
-* Booking management
-
-### 💳 Real Payments
-
-Integration with payment gateways such as:
-
-* Razorpay
-* Stripe
-
-### 🤖 Real AI Assistant
-
-Replace the mock assistant with an actual AI-powered travel assistant capable of:
-
-* Personalized itineraries
-* Destination recommendations
-* Travel planning
-* Safety recommendations
-* Budget planning
-* Real-time travel assistance
-
-### 📍 Advanced Maps
-
-Future versions could include:
-
-* Live GPS tracking
-* Nearby hospitals
-* Nearby police stations
-* Hotels near the user
-* Restaurants
-* Tourist attractions
-* Route planning
-
-### ☁️ Cloud Storage
-
-Move uploaded media from browser storage to cloud storage for persistent access.
-
-### 📱 Mobile Application
-
-The platform could eventually be converted into:
-
-* Progressive Web App
-* Android application
-* iOS application
+- **Authentication:** user registration, login, OAuth and secure accounts
+- **Backend:** Node.js and Express with REST APIs, a database, and user and booking management
+- **Real payments:** gateways such as Razorpay or Stripe
+- **Real AI assistant:** personalised itineraries, destination recommendations, travel and budget planning, safety tips and real-time assistance
+- **Advanced maps:** live GPS tracking, nearby hospitals, police stations, hotels, restaurants and attractions, and route planning
+- **Cloud storage:** move uploaded media out of the browser so it persists
+- **Mobile:** a Progressive Web App, then Android and iOS apps
 
 ---
 
-## 🎯 Project Vision
+## Project vision
 
-NIRVANOVA aims to create a unified digital travel ecosystem where travelers can:
+NIRVANOVA aims to be a single digital travel ecosystem where travellers can:
 
 > Discover → Plan → Book → Explore → Share → Stay Safe
 
-The long-term vision is to combine tourism discovery, safety, community interaction, and travel services into a single platform focused on India.
+The long-term goal is to bring tourism discovery, safety, community and travel services together in one platform built for India.
+
+| | |
+|---|---|
+| **Category** | Tourism / travel technology |
+| **Focus** | Smart tourism and traveller safety |
+| **Type** | Web prototype |
+| **Version** | Prototype v3.0 |
+| **Status** | In development |
 
 ---
 
-## 🏆 Project Type
+## About the developer
 
-**Category:** Tourism / Travel Technology
-**Type:** Web Prototype
-**Focus:** Smart Tourism & Traveler Safety
-**Platform:** Web
-**Current Version:** Prototype
+**Atharv Holkar** is a Computer Science Engineering student and developer interested in full-stack development, data structures and algorithms, web technologies, open source, entrepreneurship and building real-world products.
+
+- LinkedIn: [linkedin.com/in/atharvholkar](https://www.linkedin.com/in/atharvholkar/)
+- GitHub: [github.com/Atharv-mu](https://github.com/Atharv-mu)
 
 ---
 
-## 👨‍💻 Developer
+If you find this project interesting, consider giving the repository a star on GitHub.
 
-### Atharv Holkar
-
-Computer Science Engineering Student & Developer
-
-Interested in:
-
-* Full-Stack Development
-* Data Structures & Algorithms
-* Web Technologies
-* Open Source
-* Entrepreneurship
-* Problem Solving
-* Building real-world products
-
-### 🔗 Connect
-
-* 💼 [LinkedIn](https://www.linkedin.com/in/atharvholkar/)
-* 🐙 [GitHub](https://github.com/Atharv-mu)
-
-
-## 📌 Project Status
-
-**Current Version:** Prototype v3.0
-
-**Status:** 🚧 In Development
-
-The project is currently a frontend prototype and can be expanded into a full-stack tourism platform in future versions.
-
-
-## ⭐ Support
-
-If you find the project interesting, consider giving the repository a ⭐ on GitHub.
-
-NIRVANOVA India 🇮🇳
-
-> Travel smart. Travel safe. Travel India — better.
+*Travel smart. Travel safe. Travel India, better.*
